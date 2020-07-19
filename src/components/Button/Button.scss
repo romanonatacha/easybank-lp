@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.button {
+    border: none;
+    background: $gradient;
+    border-radius: 50px;
+    font-weight: $bold;
+    color: $white;
+    padding: ($gutter * 2) ($gutter * 4);
+
+    &:hover {
+        cursor: pointer;
+        background: $gradientHover;
+    }
+}

@@ -25,6 +25,10 @@ $neutral2: hsl(220, 16%, 96%);
 $neutral3: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
+$gradient: linear-gradient(90deg, $secondary 25%, $terciary 75%);
+$gradientHover: linear-gradient(90deg, lighten($secondary, 20%) 25%, lighten($terciary, 20%) 75%);
+
+
 // Typography
 
 $f-size: 18px;

@@ -1,0 +1,14 @@
+@import '../../variables';
+
+.section {
+    min-height: 700px;
+    height: auto;
+
+    &.a {
+        background-color: $neutral3;
+    }
+
+    &.b {
+        background-color: $neutral2;
+    }
+}

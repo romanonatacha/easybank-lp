@@ -1,13 +1,14 @@
 import React from 'react'
 import Button from '../Button/Button'
 import './Header.scss'
+import logo from '../../assets/images/logo.svg'
 
 const Header = () => {
     return (
         <div className="header">
             <div className="container header_content">
                 <div className="header_content_logo">
-                    LOGO
+                    <img src={logo} />
                 </div>
                 <div className="header_content_nav">
                     <span>Home</span>
@@ -17,7 +18,7 @@ const Header = () => {
                     <span>Careers</span>
                 </div>
                 <div className="header_content_btn">
-                    <Button text="aqui aqui" />
+                    <Button text="Request Invite" />
                 </div>
             </div>
         </div>
