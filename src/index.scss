@@ -35,6 +35,9 @@ body {
   font-family: $family;
   font-size: $f-size;
   font-weight: $light;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .container {

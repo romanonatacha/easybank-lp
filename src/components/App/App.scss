@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.content {
+    margin-top: 100px;
+}
+
+.imgBg {
+    position: absolute;
+    top: -7%;
+    left: 50%;
+}
+
+.imgBgMb {
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.imgBg2 {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    @include mobile {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+

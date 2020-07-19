@@ -51,7 +51,7 @@ $bold: 700;
   }
   
   @mixin tablet {
-    @media (min-width: #{$mobile-width + 1}) and (max-width: #{$tablet-width}) {
+    @media (min-width: #{$mobile-width + 1}) and (max-width: #{$desktop-width}) {
       @content;
     }
   }
