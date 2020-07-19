@@ -1,0 +1,42 @@
+@import './variables';
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+  color: unset !important;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: $family;
+  font-size: $f-size;
+  font-weight: $light;
+}
+
+.container {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @include mobile {
+    max-width: $mobile;
+  }
+}

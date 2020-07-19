@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+$mobile: 375px;
+$desktop: 1440px;
+
+$tablet-width: 768px;
+$desktop-width: 992px;
+$mobile-width: 425px;
+
+$gutter: 8px;
+
+// Colors
+
+//// Primary
+
+$primary: hsl(233, 26%, 24%);
+$secondary: hsl(136, 65%, 51%);
+$terciary: hsl(192, 70%, 51%);
+
+//// Neutral
+
+$neutral1: hsl(233, 8%, 62%);
+$neutral2: hsl(220, 16%, 96%);
+$neutral3: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Typography
+
+$f-size: 18px;
+$family: 'Public Sans', sans-serif;
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// media queries
+@mixin mobile-tablet {
+    @media (max-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: #{$mobile-width + 1}) and (max-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+      @content;
+    }
+  }
+  
+  @mixin desktopXS {
+    @media (min-width: #{$tablet-width + 1}) {
+      @content;
+    }
+  }

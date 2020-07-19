@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.header {
+    height: 100px;
+    background-color: $white;
+
+    &_content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_logo {
+
+        }
+
+        &_nav {
+            color: $neutral1;
+
+            span {
+                padding: $gutter * 2;
+            }
+        }
+    }
+}
