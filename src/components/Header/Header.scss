@@ -31,3 +31,19 @@
         }
     }
 }
+
+.mb_nav {
+    background-color: $white;
+    color: $primary;
+    border-radius: 16px;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    padding: $gutter * 2;
+
+    div {
+        padding: $gutter * 2;
+    }
+}

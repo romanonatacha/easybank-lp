@@ -24,6 +24,12 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  background: unset;
+  outline: none;
+}
+
 body {
   margin: 0;
   font-family: $family;
@@ -35,8 +41,33 @@ body {
   width: 100%;
   max-width: $desktop;
   margin: 0 auto;
+  padding: 0 ($gutter * 4);
 
   @include mobile {
     max-width: $mobile;
+  }
+}
+
+.mb_hide {
+  @include mobile {
+    display: none;
+  }
+}
+
+.dt_hide {
+  @include desktop {
+    display: none;
+  }
+}
+
+.tb_hide {
+  @include tablet {
+    display: none;
+  }
+}
+
+.mb_tb_hide {
+  @include mobile-tablet {
+    display: none;
   }
 }
