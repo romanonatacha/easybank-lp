@@ -2,18 +2,28 @@
 
 .content {
     margin-top: 100px;
+
+    &_first {
+        width: 40%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: $gutter * 4;
+        }
+    }
+
+    &_second {
+        width: 50%;
+    }
 }
 
 .imgBg {
     position: absolute;
     top: -7%;
     left: 50%;
-}
-
-.imgBgMb {
-    position: absolute;
-    top: 60px;
-    left: 0;
 }
 
 .imgBg2 {
